@@ -1,3 +1,5 @@
+// import random from "random";
+
 require("dotenv").config();
 
 const { ADMIN_USERNAME, ADMIN_PASSWORD } = process.env;
@@ -10,14 +12,24 @@ export const applicationsSearchText = "Eli";
 export const applicationsSearchResultText = /.*[Ee]l[ií].*/;
 
 export const ApplicationTexts = {
-    loginPage: {
-        title:"Přihlášení - Czechitas",
+  loginPage: {
+    title: "Přihlášení - Czechitas",
+    emailFieldLabel: "Email",
+    passwordFieldLabel: "Heslo",
+    loginButtonLabel: "Přihlásit",
+  },
+  applicationsPage: {
+    title: "Přihlášky - Czechitas",
+    applicationsSectionName: "Přihlášky",
+  },
+  /*registrationPage: {
+        title: "Registrace"
+        nameFieldLabel: "Jméno a příjmení",
         emailFieldLabel: "Email",
         passwordFieldLabel: "Heslo",
-        loginButtonLabel: "Přihlásit",
+        passwordCheckLAbel: "Kontrola hesla"
+        loginButtonLabel: "Zaregistrovat",
     },
-    applicationsPage: {
-        title: "Přihlášky - Czechitas",
-        applicationsSectionName: "Přihlášky"
-    }
-}
+    */
+};
+
