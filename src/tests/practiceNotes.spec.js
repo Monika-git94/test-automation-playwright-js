@@ -129,6 +129,10 @@ test.describe("test suite", () => {
     test("should …", async({ page }) => { /* test 1*/ });
         test("should …", async({ page }) => { /* test 2*/ });
     });
+
+
+    //hledani lokatoru v
+    //await page.locator('.dropdown-item').filter({ hasText: 'Objednávka pro MŠ/ZŠ' }).click()
     
         
     
